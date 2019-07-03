@@ -3,39 +3,47 @@
 -	do(), map(), catch(),subscribe() methods are operators on the Observable class used for asynchronous operation
 -	map() operator is used to transform object of one type to another 
 
-	-	subscribe(
-			(response : Response) => {
-			
-			},
-			(error: Response) => {
-			
-			
-		});
-		
-	-	catch((error:Response) => {
+	-	subscribe:
 	
+			subscribe(
+				(response : Response) => {
+				
+				},
+				(error: Response) => {
+				
+				
+			});
+		
+	-	catch:
+		
+			catch((error:Response) => {
+		
+		
+			})
+			
+	-	map:
+		
+			map((response: Response) => {
+				
+			
+			});
+		
+	-	Promise:
 	
-		})
-		
-	-	map((response: Response) => {
-			
-		
-		});
-		
-	-	new Promise((resolve, reject) => {
-			setTimeout(() => {
-							
-				if(control.value === 'bharath'){
-					resolve({isUnique: true});
-				}
-				else {
-					resolve(null);
-				}
-			
-			
-			},3000);
-			
-		});
+			new Promise((resolve, reject) => {
+				setTimeout(() => {
+								
+					if(control.value === 'bharath'){
+						resolve({isUnique: true});
+					}
+					else {
+						resolve(null);
+					}
+				
+				
+				},3000);
+				
+			});
 
 
 ##	Observables vs Promises
