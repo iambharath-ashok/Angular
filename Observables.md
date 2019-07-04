@@ -84,3 +84,10 @@
 		
 		
 -	Since observable is going to work only when we subscribe to it, we can chain multiple operators together like map(), catch(), do(), retry(3) etc
+
+
+#	RxJs
+
+
+-	RxJs is a third party library that angular uses heavily for asynchronous operations
+-	RxJs is Reactive Programming library which is all about observables
